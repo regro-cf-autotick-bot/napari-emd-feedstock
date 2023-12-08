@@ -1,5 +1,5 @@
 {% set name = "napari-emd" %}
-{% set version = "0.0.1" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-EMD-{{ version }}.tar.gz
-  sha256: 22b4f45385d489c284932678f450431b836ce18407f9b52af450bd96005c9a5c
+  sha256: 62a82410366777aa19f625f8765071b6ef2dde833825f5b18949f5b0a721913c
 
 build:
   noarch: python
@@ -18,11 +18,13 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - h5py
     - magicgui
     - numpy
     - python >=3.8
+    - qtpy          # Imported but not listed as requirement
     - ujson
 
 test:
@@ -36,7 +38,7 @@ test:
     - pyqt
 
 about:
-  home: https://pypi.org/project/napari-EMD/
+  home: https://pypi.org/project/napari-EMD
   summary: A simple plugin to view .emd files in napari (Velox files)
   license: BSD-3-Clause
   license_file: LICENSE
