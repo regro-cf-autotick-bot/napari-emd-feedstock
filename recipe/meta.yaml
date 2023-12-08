@@ -18,11 +18,13 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - h5py
     - magicgui
     - numpy
     - python >=3.8
+    - qtpy          # Imported but not listed as requirement
     - ujson
 
 test:
@@ -36,7 +38,7 @@ test:
     - pyqt
 
 about:
-  home: https://pypi.org/project/napari-EMD/
+  home: https://pypi.org/project/napari-EMD
   summary: A simple plugin to view .emd files in napari (Velox files)
   license: BSD-3-Clause
   license_file: LICENSE
