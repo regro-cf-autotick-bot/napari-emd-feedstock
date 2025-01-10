@@ -3,7 +3,7 @@ About napari-emd-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-emd-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pypi.org/project/napari-EMD/
+Home: https://pypi.org/project/napari-EMD
 
 Package license: BSD-3-Clause
 
